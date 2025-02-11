@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suwoto Servis </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px 80px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(43, 108, 176, 0.8), rgba(43, 108, 176, 0.8)),
+                        url('https://images.unsplash.com/photo-1585730062127-1ab4b18b47aa');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff5252;
+        }
+
+        .services {
+            padding: 100px 80px;
+            background-color: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2b6cb0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .service-card i {
+            font-size: 40px;
+            color: #2b6cb0;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #2b6cb0;
+            color: white;
+            padding: 50px 80px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            header, .hero, .services {
+                padding: 20px 30px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-logo">SUWOTO<span style="color: #ff6b6b;">SERVIS</span></div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Servis Mesin Jahit Profesional</h1>
+            <p>Kami menyediakan jasa perbaikan dan perawatan mesin jahit untuk rumah tangga dan industri. Teknisi berpengalaman dengan garansi resmi.</p>
+            <a href="#contact" class="cta-button">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2 class="section-title">Layanan Kami</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Servis Berkala</h3>
+                <p>Perawatan rutin untuk menjaga performa mesin jahit tetap optimal</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-wrench"></i>
+                <h3>Perbaikan Kerusakan</h3>
+                <p>Perbaikan berbagai jenis kerusakan mesin jahit merek terkenal</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-oil-can"></i>
+                <h3>Ganti Sparepart</h3>
+                <p>Penggantian sparepart original dengan garansi resmi</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" style="padding: 100px 80px;">
+        <h2 class="section-title">Mengapa Memilih Kami?</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+            <div>
+                <h3 style="margin-bottom: 20px;">Spesialis Mesin Jahit Berpengalaman</h3>
+                <p style="line-height: 1.6;">Dengan lebih dari 20 tahun pengalaman, kami telah membantu ratusan pelanggan baik perorangan maupun industri tekstil. Teknisi kami tersertifikasi dan menggunakan alat profesional.</p>
+            </div>
+            <img src="jan.jpg" alt="Teknisi Mesin Jahit" style="width: 100%; border-radius: 10px;">
+        </div>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 30px;">
+            <h3>Hubungi Kami</h3>
+            <p style="margin: 15px 0;"><i class="fas fa-phone"></i> +62 856-4590-5517</p>
+            <p style="margin: 15px 0;"><i class="fas fa-map-marker-alt"></i> Jl. KH Bisri syamsuri RT 006 RW 003 Desa Kemangi, 
+            <p style="margin: 15px 0;"><i class=""></i> Kecamatan Bungah, Kabupaten Gresik    
+        <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">
+            <p>© 2023 Suwoto servis. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
